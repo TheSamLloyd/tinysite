@@ -10,5 +10,6 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname,'index.html'));
 });
 app.listen(port, function(){
+    console.log(__dirname)
     console.log("Server active on port "+port)
 });
