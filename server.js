@@ -8,6 +8,7 @@ app.get('/ping', function (req, res) {
   return res.send('pong');
 });
 app.get('/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join('./index.html'));
 });
+console.log("Server running on port "+port)
 app.listen(port);
